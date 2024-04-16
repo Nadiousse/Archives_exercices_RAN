@@ -1,0 +1,269 @@
+/*Reinitialisation des comportements*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*Header à gauche de l'écran*/
+header {
+    background: #0177B4;
+    height: 100%; 
+    width: 300px; 
+    position: fixed;
+    padding: 50px 0px 50px 10px;
+}
+
+header img {
+    padding-bottom: 100px;
+}
+
+.menu {
+    padding-left: 20px;
+}
+
+header p {
+    display: inline-block;
+    position: fixed;
+    padding-bottom: 10px;
+    bottom:0;
+    font-size: 13px;
+}
+
+/*textes + titres*/
+
+body {
+    font-family: sans-serif;
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Pixelify Sans', sans-serif;
+    color: #0177B4;
+    font-weight: 700;
+    padding: 20px 0px 40px 0px;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h3 {
+    font-size: 50px;
+}
+
+h4{
+    font-size: 40px;
+}
+
+p, table{
+    line-height: 2;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/*Menu des parties de la page*/
+.menu>ul {
+    font-family:'Pixelify Sans', sans-serif;
+    font-size:25px;
+    border-left: 4px solid #00B7FF;
+}
+
+/*Liens*/
+a:link, a:visited {
+    color:#00B7FF;
+    text-shadow: blue;
+}
+
+a:hover {
+    border: 2px solid #00B7FF;
+}
+
+a:active {
+    background-color: rgb(194, 220, 244);
+}
+
+
+/*Paramètres de la page*/
+
+/*Marge sur toute la page sauf le heaeder*/
+
+#présentation, #compétences, #PDF, #exp-pro, #extra {
+    margin-left : 360px;
+    margin-right: 70px;
+}
+
+/* Boîte des titres de la page */
+
+#titres {
+    background-image: linear-gradient(
+    180deg,
+    hsl(0deg 0% 100%) 0%,
+    hsl(197deg 100% 95%) 11%,
+    hsl(197deg 100% 89%) 22%,
+    hsl(197deg 100% 83%) 33%,
+    hsl(197deg 100% 78%) 44%,
+    hsl(197deg 100% 72%) 56%,
+    hsl(197deg 100% 67%) 67%,
+    hsl(197deg 100% 61%) 78%,
+    hsl(197deg 100% 55%) 89%,
+    hsl(197deg 100% 50%) 100%
+    );
+      padding-top: 150px;
+      margin-left: 300px;
+      height:60vh;
+}
+
+/* Block Présentation */
+
+#présentation {
+    height:500px;
+    margin-bottom: 80px;
+}
+
+#présentation h3 {
+    padding: 50px 0px;
+}
+
+#présentation p {
+    padding-left: 300px;
+    text-align: justify;
+}
+
+hr {
+    background-image: url('../Images/separateur.jpg');
+    height: 100px;
+    margin-top: 100px;
+}
+
+/* Block Compétences*/
+
+#compétences {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.flex {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.boite, .boite-1, .boite-2 {
+    border-radius: 25px;
+    padding : 10px 0px;
+    border: 3px dashed #00B7FF;
+}
+
+/* Bouton PDF download */
+
+#PDF {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    height: 80vh;
+    background-image: linear-gradient(
+    0deg,
+    hsl(0deg 0% 100%) 0%,
+    hsl(197deg 100% 95%) 11%,
+    hsl(197deg 100% 89%) 22%,
+    hsl(197deg 100% 83%) 33%,
+    hsl(197deg 100% 78%) 44%,
+    hsl(197deg 100% 72%) 56%,
+    hsl(197deg 100% 67%) 67%,
+    hsl(197deg 100% 61%) 78%,
+    hsl(197deg 100% 55%) 89%,
+    hsl(197deg 100% 50%) 100%
+    );
+    border-radius: 50px;
+}
+
+#PDF a {
+    background-color:#0177B4; /* Green */
+    border-radius: 20px;
+    color: white;
+    padding: 30px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin-right: 150px;
+}
+
+/* Block Expériences professionnelles */
+
+#exp-pro {
+    margin-top: 30px;
+    margin-bottom: 150px;
+}
+
+table {
+    width: 100%;
+    padding-top: 50px;
+}
+
+th, td {
+    padding: 15px;
+}
+
+th {
+    border: 5px solid #00b7ff88;
+    font-weight: 700;
+    text-align: left;
+}
+
+td {
+    border-bottom: 5px solid #00b7ff88;
+}
+
+/* Block Extra-professionnel*/
+
+#extra {
+    margin-bottom: 150px;
+}
+
+.grid {
+    display: inline-flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.boite-1 + .boite-2{
+    justify-content:left;
+    padding: 10px
+}
+
+.boite-1 {
+    max-width: 400px;
+}
+
+.boite-1 img {
+    width: 80%;
+}
+
+.boite-2 {
+    max-width: 850px;
+}
+
+.boite-2 img {
+    width: 95%;
+    padding-top: 200px;
+}

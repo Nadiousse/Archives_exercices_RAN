@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style_form.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Formulaire de contact</h2>
+        <form action="x" method="POST">
+            <label for="nom" class="nom">Nom :</label>
+            <input type="nom" id="nom" name="Nom" class="nom" placeholder="DUPONT" required><br>
+
+            <label for="prenom" class="prenom">Prénom :</label>
+            <input type="prenom" id="prenom" name="Prénom" class="prenom" placeholder="Charles" required><br>
+
+            <label for="titre_message" class="titre_message">Titre du message :</label>
+            <input type="titre" id="titre_message" name="Titre" class="titre_message"><br>
+
+            <label for="objet" class="objet">Objet du message :</label>
+            <select id="objet" name="objet" class="objet" required>
+                <option value="">----Merci de séléctionner l'objet----</option>
+                <option value="">Prise de contact</option>
+                <option value="">Devis</option>
+                <option value="">Bug report</option>
+            </select><br>
+
+            <label for="message" class="message">Message :</label>
+            <textarea name="message" id="message" cols="30" rows="10" class="message" required></textarea><br>
+
+            <input type="checkbox" class="cgv" required>
+            <label for="CGV" class="cgv">Veuillez cocher la case afin d'accepter les conditions de traitement des données</label><br>
+            
+            <button type="submit">Envoyer</button>
+        </form>
+</body>
+</html>

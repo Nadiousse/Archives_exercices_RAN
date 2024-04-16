@@ -1,0 +1,12 @@
+div{
+    display: inline-flex;
+}
+
+ul{
+    list-style: none;
+}
+
+table {
+    border-collapse : collapse;
+}
+

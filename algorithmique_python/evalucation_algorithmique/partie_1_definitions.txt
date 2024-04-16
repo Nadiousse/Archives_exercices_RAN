@@ -1,0 +1,13 @@
+affectations = Une affectation est l'action d'attribution d'une valeur, d'un texte ou d'une liste à une variable.
+
+concaténation = Quand on concaténe, on mets une instruction puis à la ligne suivante on mets une tabulation. Quand l'instruction est terminé, on enlève la tabulation.
+
+Itération = Une répétition d'un code en boucle.
+
+Intruction = Quand on dit quoi faire avec quoi.
+
+
+
+La différence entre une fonction et une procédure :
+Une fonction est un ensemble d'instructions qui retourne un résultat.
+Une procédure est une fonction qui ne fait qu'afficher ce qu'on lui demande sans retourner quoi que ce soit.
